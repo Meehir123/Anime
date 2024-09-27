@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Anime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+            background-color: #1c1c1e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            color: #ff4081;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 1.5rem;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav ul li a:hover {
+            color: #ff4081;
+        }
+
+
+/* Main Content Section */
+.main-content {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.anime-grid div {
+    background-color: #fff3e0; /* Light action theme background */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.anime-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.anime-grid h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff5722;
+}
+
+.anime-grid p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1e;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+</style>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>AnimeVibe</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="action.html">Action</a></li>
+                <li><a href="horror.html">Horror</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <a href="home.html"><button type="button" style="background-color: #ff4081; ">Go Back</button></a>
+        <h2>Action Anime</h2>
+        <div class="anime-grid">
+            <div>
+                <img src="https://i.pinimg.com/564x/26/2a/d0/262ad0bde84d6c33200dfe488fb18433.jpg" alt="Action Anime 1">
+                <h3>Attack on Titan</h3>
+                <p>Intense battles, gripping storylines, and epic moments!</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/564x/3b/53/95/3b53955696ae580cbce1b35355f2e33a.jpg" alt="Action Anime 2">
+                <h3>One Punch Man</h3>
+                <p>The ultimate hero in a world of monsters and mayhem.</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/fe/ef/92/feef926836fbc7130733bf83f74ac26f.jpg" alt="Action Anime 3">
+                <h3>Demon Slayer</h3>
+                <p>A young boy battles demons to avenge his family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AnimeVibe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

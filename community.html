@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Community Section */
+.community-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.community-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.community-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.community-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.community-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.community-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.community-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.community-button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.community-button:hover {
+    background-color: #ff669a;
+}
+
+</style>
+<body>
+    <!-- Community Section -->
+<section class="community-section">
+    <a href="home.html"><button type="button" style="background-color: #ff4081; ">Go Back</button></a>
+    <h2>Join the Community</h2>
+    <div class="community-grid">
+        <div class="community-card">
+            <img src="https://images.chesscomfiles.com/proxy/www.nintendo.co.jp/ds/ajsj/images/top_l_img/http/fac3dc8575.jpg" alt="Forum">
+            <h3>Forums</h3>
+            <p>Engage in discussions about your favorite anime and more.</p>
+            <a href="https://animeforums.net/" class="community-button">Join the Discussion</a>
+        </div>
+        <div class="community-card">
+            <img src="https://thefullfrontal.my/wp-content/uploads/2022/05/Anime-Fest-2022-Feature-Image.jpg" alt="Events">
+            <h3>Events</h3>
+            <p>Participate in anime-related events and activities.</p>
+            <a href="https://www.townscript.com/e/agi-anime-event-022110" class="community-button">See Upcoming Events</a>
+        </div>
+        <div class="community-card">
+            <img src="https://images.fonearena.com/blog/wp-content/uploads/2016/06/Instagram-new-logo.jpg" alt="Social Media">
+            <h3>Social Media</h3>
+            <p>Follow us and stay updated with the latest news and updates.</p>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" class="community-button">Follow Us</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* News Section */
+.news-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.news-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-grid article {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-grid article:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.news-grid h3 {
+    font-size: 1.5rem;
+    color: #ff4081;
+    margin-bottom: 0.5rem;
+}
+
+.news-grid p {
+    font-size: 1rem;
+    color: #666;
+}
+
+</style>
+<body>
+    <section class="news-section">
+        <a href="home.html"><button type="button" style="display: inline-flex;">Go Back</button></a>
+        <h2>Latest News</h2>
+        <div class="news-grid">
+            <article>
+                <img src=" https://i.pinimg.com/564x/21/49/91/2149914981d9da362e97fefe6978596d.jpg" alt="Anime Convention " alt="New Anime Release">
+                <h3>New Anime Release Announced!</h3>
+                <p>Check out the latest announcement for a brand new anime series coming this season!</p>
+            </article>
+            <article>
+                <img src="https://i.pinimg.com/564x/43/09/1b/43091b9d2ce4aca3e186493c07bae55e.jpg" alt="Top 10 Anime">
+                <h3>Top 10 Anime of the Year</h3>
+                <p>Discover the top 10 anime that are making waves this year according to fans and critics alike!</p>
+            </article>
+            <article>
+                <img src="https://i.pinimg.com/736x/c2/88/12/c2881244cb86539bd1debcb3e05781ef.jpg " alt="Anime Convention">
+                <h3>Upcoming Anime Convention</h3>
+                <p>Don’t miss the biggest anime convention of the year with special guests, screenings, and more!</p>
+            </article>
+            <article>
+                <img src="https://i.pinimg.com/736x/92/b8/ee/92b8eee14fd9514d8bfd65f243092684.jpg" alt="Anime Merchandise">
+                <a href="accessorie.html"><h3>New Anime Merchandise Now Available!</h3></a>
+                <p>Explore the latest collection of anime-themed merchandise now available in stores.</p>
+            </article>
+        </div>
+    </section>
+    
+</body>
+</html>
+<!-- News Section -->

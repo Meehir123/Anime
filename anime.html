@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Anime List Section */
+.anime-list-section {
+    padding: 2rem;
+    background-color: #e8eaf6;
+}
+
+.anime-list-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.anime-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.anime-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.anime-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.anime-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.anime-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.anime-button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.anime-button:hover {
+    background-color: #ff669a;
+}
+
+</style>
+<body>
+    <!-- Anime List Section -->
+<section class="anime-list-section">
+    <a href="home.html"><button type="button" style="background-color: #ff4081; ">Go Back</button></a>
+    <h2>Anime List</h2>
+    <div class="anime-list-grid">
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/564x/bf/07/e2/bf07e278c884154eeeddf4df1cfdcda3.jpg" alt="Anime 1">
+            <h3>Attack on Titan</h3>
+            <p>Humanity's fight for survival against the Titans.</p>
+            <a href="attack-on-titan.html" class="anime-button">Learn More</a>
+        </div>
+        
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/736x/fb/cf/89/fbcf89ab9bde063b8a719ffbcff6a72c.jpg" alt="Anime 3">
+            <h3>Demon Slayer</h3>
+            <p>A boy fights demons to save his sister and avenge his family.</p>
+            <a href="demon-slayer.html" class="anime-button">Learn More</a>
+        </div>
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/564x/aa/85/2a/aa852aef2bd3212083468102c26f8c9a.jpg" alt="Anime 4">
+            <h3>Fullmetal Alchemist</h3>
+            <p>Two brothers seek the Philosopher's Stone to restore their bodies.</p>
+            <a href="fullmetal-alchemist.html" class="anime-button">Learn More</a>
+        </div>
+        <div class="anime-card">
+            <img src="m.png" alt="Anime 2">
+            <h3>My Hero Academia</h3>
+            <p>A young boy inherits superpowers and trains to become a hero.</p>
+            <a href="my-hero-academia.html" class="anime-button">Learn More</a>
+        </div>
+        
+        <div class="anime-card">
+            <img src="g.png" alt="Dragon Ball">
+            <h3>Dragon Ball</h3>
+            <p>A young martial artist seeks the Dragon Balls and grows into a powerful warrior.</p>
+            <a href="dragon-ball.html" class="anime-button">Learn More</a>
+        </div>
+        
+        <div class="anime-card">
+            <img src="b.png" alt="Bleach">
+            <h3>Bleach</h3>
+            <p>A teenager with the ability to see ghosts gains the power of a Soul Reaper and battles evil spirits.</p>
+            <a href="bleach.html" class="anime-button">Learn More</a>
+        </div>
+        
+        <div class="anime-card">
+            <img src="o.png" alt="One Piece">
+            <h3>One Piece</h3>
+            <p>A young pirate sets sail to find the ultimate treasure and become the Pirate King.</p>
+            <a href="one-piece.html" class="anime-button">Learn More</a>
+        </div>
+        
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/564x/9f/d2/a6/9fd2a66efc962b660d1a931e8d9789e8.jpg" alt="Fairy Tail">
+            <h3>Fairy Tail</h3>
+            <p>A group of mages in the Fairy Tail guild go on magical adventures and face powerful foes.</p>
+            <a href="fairy-tail.html" class="anime-button">Learn More</a>
+        </div>
+        
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1c1c1e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            color: #ff4081;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 1.5rem;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav ul li a:hover {
+            color: #ff4081;
+        }
+
+        /* Hero Section */
+        .hero {
+        position: relative;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+      overflow: hidden; /* Ensures video stays contained */
+    }
+
+    /* Video styling to cover the hero section */
+    .hero video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      object-fit: cover; /* Ensures the video covers the container */
+      z-index: -1; /* Puts the video behind the content */
+    }
+
+    /* Optional styling for the content */
+    .hero-content {
+        position: relative;
+      z-index: 1; /* Keeps the content above the video */
+    }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero button {
+            background-color: #ff4081;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #ff669a;
+        }
+
+        /* Featured Section */
+        .featured-section {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+        }
+        .featured-section h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .featured-anime {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .featured-anime div {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .featured-anime img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .featured-anime div:hover img {
+            transform: scale(1.05);
+        }
+        .featured-anime h3 {
+            margin: 0;
+            padding: 0.5rem;
+            background-color: #ff4081;
+            color: white;
+            text-align: center;
+        }
+
+        /* Genres Section */
+        .genres-section {
+            padding: 2rem;
+            background-color: #e8eaf6;
+            text-align: center;
+        }
+        .genres-section h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .genres-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .genres-grid button {
+            background-color: #ff4081;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .genres-grid button:hover {
+            background-color: #ff669a;
+        }
+
+        /* News Section */
+        .news-section {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+        .news-section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .news-grid article {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .news-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c1c1e;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>AnimeVibe</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="anime.html">Anime List</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="a.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-content">
+
+        </div>
+        <div>
+            <h2>Explore the Latest Anime!</h2>
+            <a href="https://hianime.to/home"><button>Watch Now</button></a>
+        </div>
+    </div>
+
+    <!-- Featured Anime Section -->
+    <section class="featured-section">
+        <h2>Featured Anime</h2>
+        <div class="featured-anime">
+            <div>
+                <a href="https://hianime.to/watch/dragon-ball-509?ep=10218" type=" _blank"><img src="download.png" alt="Anime Image"></a>
+                <h3>Dragonball</h3>
+            </div>
+            <div>
+                <a href="https://hianime.to/watch/bleach-806?ep=13793" type=" _blank"><img src="b.png" alt="Anime Image"></a>
+                <h3>Bleach</h3>
+            </div>
+            <div>
+                <a href="https://hianime.to/watch/one-piece-100?ep=2142" type=" _blank"> <img src="o.png" alt="Anime Image"></a>
+                <h3>One Piece </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genres Section -->
+    <section class="genres-section">
+        <h2>Explore by Genres</h2>
+        <div class="genres-grid">
+            <div><button onclick="window.location.href='action.html'">Action</button></div>
+            <div><button onclick="window.location.href='horror.html'">Horror</button></div>
+            <div><button onclick="window.location.href='comedy.html'">Comedy</button></div>
+            <div><button onclick="window.location.href='fantasy.html'">Fantasy</button></div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+            <article>
+                <img src="https://i.pinimg.com/564x/79/9d/52/799d5228e162feaf613d7d617004abe9.jpg" alt="News Image">
+                <h3>New Anime Release Announced!</h3>
+                <p>Check out the latest announcement for a brand new anime series coming this season!</p>
+            </article>
+            <article>
+                <img src="https://i.pinimg.com/474x/15/93/8f/15938fe8deaaa43b87575e3aa11a3bcb.jpg" alt="News Image">
+                <h3>Top 10 Anime of the Year</h3>
+                <p>Discover the top 10 anime that are making waves this year according to fans and critics alike!</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AnimeVibe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
